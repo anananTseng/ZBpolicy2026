@@ -45,8 +45,27 @@ p{margin:7px 0 13px}
 footer{font-size:12px;color:#6c7e8c}
 @media(max-width:750px){.panel{padding:19px 16px}.candidate{padding:15px}.analysis{padding:16px}.nav button{font-size:13px;padding:9px 10px}body{font-size:15px}}
 @media(max-width:460px){header{padding-left:17px;padding-right:17px}.scope-notice{font-size:13px}.entry>p{font-size:14px}.analysis p{font-size:14px}}
+
+/* V6: readable text sizing and separate AI follow-up page */
+:root{font-size:17px}
+body{font-size:17px;line-height:1.78}
+header h1{font-size:clamp(26px,3.2vw,34px)}
+header p,.scope-notice{font-size:15px}
+h2{font-size:22px}h3{font-size:19px}h4{font-size:17px}
+p,li{font-size:16px;line-height:1.85}
+.subtle{font-size:14px}
+.nav button{font-size:15px;padding:11px 15px}
+.filters label{font-size:14px}.filters select,.filters input{font-size:16px}
+.candidate summary{font-size:20px}
+.entry h4{font-size:17px}.entry>p{font-size:16px}
+.tag{font-size:12px}.note{font-size:15px;line-height:1.8}
+.analysis-heading{font-size:19px}.analysis h4{font-size:16px}.analysis p{font-size:16px}.analysis p.subtle{font-size:14px}
+.comparecard h3{font-size:19px}.comparecard h4{font-size:16px}.comparecard p{font-size:16px}
+.summary{font-size:16px}.compare-hint,.followup{font-size:15px!important}footer{font-size:14px}
+@media(max-width:750px){body{font-size:16px}.nav button{font-size:14px}}
+@media(max-width:460px){.scope-notice{font-size:14px}.entry>p,.analysis p{font-size:15px}}
 </style></head><body>
-<header><h1>2026 竹北政見發表會・政策整理與分析</h1><p>公辦政見發表會・2026 年 11 月 19 日<br>政策內容、權責可行性、西區四里、演說觀察與跨候選人比較</p><div class="scope-notice"><strong>收錄範圍提醒</strong>　本網站為整理 2026 年 11 月 19 日政見發表會發言而臨時架設，僅收錄當日參與且有發言紀錄的候選人。未參與的候選人資料不在本站，本站並非完整候選人名單。</div><nav class="nav" aria-label="主要功能"><button class="active" data-view="browse">候選人完整分析</button><button data-view="compare">同議題比較</button><button data-view="west">西區四里觀察</button><button data-view="guide">權責與閱讀說明</button></nav></header>
+<header><h1>2026 竹北政見發表會・政策整理與分析</h1><p>公辦政見發表會・2026 年 11 月 19 日<br>政策內容、權責可行性、西區四里、演說觀察與跨候選人比較</p><div class="scope-notice"><strong>收錄範圍提醒</strong>　本網站為整理 2026 年 11 月 19 日政見發表會發言而臨時架設，僅收錄當日參與且有發言紀錄的候選人。未參與的候選人資料不在本站，本站並非完整候選人名單。</div><nav class="nav" aria-label="主要功能"><button class="active" data-view="browse">候選人完整分析</button><button data-view="compare">同議題比較</button><button data-view="west">西區四里觀察</button><button data-view="guide">權責與閱讀說明</button><button data-view="followups">政策追問與待釐清事項</button></nav></header>
 <main>
 <section id="browse"><div class="panel"><h2>查詢與篩選</h2><p class="subtle">篩選的是政見紀錄；選定候選人後，仍可展開其「演說技巧、政策廣度、執行方式、西區關聯與待查問題」完整分析。</p><div class="filters">
 <label>選舉類別<select id="type"><option value="">全部</option><option>議員</option><option>市長</option></select></label>
@@ -59,14 +78,14 @@ footer{font-size:12px;color:#6c7e8c}
 <div class="panel"><h2>候選人政策與完整分析</h2><p class="subtle" id="status"></p><div id="results"></div></div></section>
 <section id="compare" class="hidden"><div class="panel"><h2>同議題・候選人並排比較</h2><p class="subtle">比較同一選舉類別中的候選人，不以政見數量排名，也不把未提及視為反對。</p><div class="filters"><label>選舉類別<select id="compareType"><option value="議員">縣議員</option><option value="市長">竹北市長</option></select></label><label>政策主題<select id="compareTopic"></select></label></div><div class="comparison" id="comparison"></div><p class="compare-hint">想知道哪些主張仍需要補充經費、期程或權責說明？請參閱上方「權責與閱讀說明」中的「政策追問與待釐清事項」。這些是整理者的分析提問，並非候選人原話。</p></div></section>
 <section id="west" class="hidden"><div class="panel"><h2>大義、尚義、崇義、大眉四里｜在地觀察</h2><div class="summary">以下是從地方需求出發的追問清單，<strong>不是宣稱候選人已逐里承諾</strong>。本次發言多以「西區」為範圍，具體到四里的路線、場址、工程及期程仍有待補充。</div><div class="sections"><article class="analysis"><h3>公共運輸與通學</h3><p>大義、尚義、崇義、大眉等聚落不只需要「有公車」，還要能在上學、上班、就醫時搭得到。請具體檢討62、63等路線與黃金通學線的轉乘時刻、首末班、候車環境、電話預約及替代運輸。</p><p class="subtle"><strong>權責與追蹤：</strong>市民公車與地方接駁可由市公所檢討；跨縣市、縣管路線或中央補助需另行協調。</p></article><article class="analysis"><h3>道路與行人安全</h3><p>鳳岡路二段150巷等狹窄路段、學校周邊通學安全、危險路口，以及台一線替代道路如何銜接鳳岡路，需有路段清單與優先順序。</p><p class="subtle"><strong>權責與追蹤：</strong>道路拓寬可能涉及土地取得、排水、不同道路主管機關及預算。</p></article><article class="analysis"><h3>公共設施與土地</h3><p>西區公園、運動場、托育、親子與長者空間應先盤點公有地、既有活動中心、人口分布及實際使用需求。</p><p class="subtle"><strong>權責與追蹤：</strong>設施場址、使用分區、權屬、建築消防及營運經費需分別查明。</p></article><article class="analysis"><h3>環境負擔與防洪</h3><p>焚化爐、掩埋場及相關環境設施的監測、健康風險、資訊公開與回饋制度，應與河川、雨水下水道及易淹水熱點一併追蹤。</p><p class="subtle"><strong>權責與追蹤：</strong>環保、衛生、水利及回饋金涉及不同主管機關；市公所可協調並公開辦理進度。</p></article><article class="analysis"><h3>社區服務與參與</h3><p>將各里既有場館與社區組織納入長者共餐、兒少照顧、樂齡課程、防災及地方需求盤點，避免所有資源集中在單一大型場館。</p><p class="subtle"><strong>權責與追蹤：</strong>需建立服務對象、場地、人力、經費與固定回報機制。</p></article></div></div></section>
-<section id="guide" class="hidden"><div class="panel"><h2>如何看待權責、可行性與演說？</h2>
+<section id="followups" class="hidden"><div class="panel"><h2>政策追問與待釐清事項</h2><div class="summary"><strong>這個區塊的用途：</strong>以下根據候選人發言所涉及的共通政策，整理出仍需補充的預算、執行期程、主管機關、法規或服務範圍等問題。這是 AI 根據發言內容自動整理的後續追問方向，<strong>不是候選人的原話、正式承諾，也不是對特定候選人的負面評價。</strong></div><div id="allCommon"></div>
+<h3>尚待查證的重要細節</h3><p>經國大橋與台一線替代道路的核定、經費與施工進度；大義一帶約八公頃土地的權屬及用途；市場預算增幅；幸福巴士補助資格；敬老卡跨運具使用；地方福利年度財源；輕軌、河川整治與社會住宅的主管機關和辦理程序。</p>
+</div></section><section id="guide" class="hidden"><div class="panel"><h2>如何看待權責、可行性與演說？</h2>
 <h3>議員與市長的職權不同</h3><p>縣議員主要透過縣府預算審議、質詢、提案及監督推動政策；竹北市長領導市公所執行其自治事務並編列相關預算，仍須依法送市民代表會審議。涉及縣府、中央、學校、醫療或運輸業者的政策，需另有協調與法定程序。</p>
 <h3>跨權責不等於不可行</h3><p>觀察候選人有沒有提出：① 主責機關；② 市公所／議員能做的具體動作；③ 合作機關與資源；④ 預算及法規；⑤ 進度公開與驗收標準。只說「爭取」仍需要補充可追蹤的路徑。</p>
 <h3>如何讀演說分析</h3><p>本站分析候選人如何鋪陳問題、引用個人經驗、安排政策順序，以及希望讓民眾理解的施政重點；這些是演說文本觀察，並非候選人能力、可信度或選舉結果的排名。</p>
-<h3 id="followup-title">政策追問與待釐清事項</h3><div class="summary"><strong>這個區塊的用途：</strong>以下根據候選人發言所涉及的共通政策，整理出仍需補充的預算、執行期程、主管機關、法規或服務範圍等問題。這是網站整理者提出的後續追問方向，<strong>不是候選人的原話、正式承諾，也不是對特定候選人的負面評價。</strong></div><div id="allCommon"></div>
-<h3>尚待查證的重要細節</h3><p>經國大橋與台一線替代道路的核定、經費與施工進度；大義一帶約八公頃土地的權屬及用途；市場預算增幅；幸福巴士補助資格；敬老卡跨運具使用；地方福利年度財源；輕軌、河川整治與社會住宅的主管機關和辦理程序。</p>
 <h3>收錄範圍與資料限制</h3><p>本網站為整理 2026 年 11 月 19 日政見發表會發言而臨時架設，收錄當日參與且有發言紀錄的四位縣議員候選人及三位市長候選人。未參與該場發表會者不列入，並不代表沒有政見或不參選。內容根據使用者提供的當日口述紀錄整理，非官方逐字稿；部分數字、專有名詞及政策名稱可能受語音辨識影響，候選人自述的既有政績未逐一獨立查證。網站中的「權責」是初步分析，應再以現行法規及主管機關資料確認。</p></div></section>
-<footer>非官方選舉網站・以政策資訊與公民查詢為目的・不提供候選人評分、排名或投票建議。最後更新：2026/11/19。</footer></main>
+<footer>本站政策摘要、分類、權責分析及政策追問由 AI 自動整理，非官方逐字稿，請以原始發言及主管機關資料為準。非官方選舉網站・以政策資訊與公民查詢為目的・不提供候選人評分、排名或投票建議。最後更新：2026/11/19。</footer></main>
 <script>const D=[
 {name:'張珈源',type:'議員',num:'6',intro:'兩屆議員、在地服務；以道路建設與西區均衡發展為主軸。',items:[['交通','經國大橋規劃、竹北交流道改善、台一線替代道路延伸及鳳岡路匝道、光明六路西延；擴充通學公車與YouBike。','跨機關：縣府、中央道路及交通主管機關；候選人提及既有計畫與爭取經驗，進度待核。','西區'],['教育','高中增班、實驗高中通學路線、西區老舊中小學設備與教學環境改善。','縣府教育主管機關；議員可提案、審議預算與監督。','西區'],['托育與長照','增設公托、臨托，提高托育人員久任獎金；爭取65歲以上健保費補助、敬老卡升級及一里一長照供餐點。','托育及健保費補助須由主管機關規劃財源；供餐點需場地與營運人力。','西區'],['土地與環境','盤點西區公地增設公園、運動空間；爭取西區運動中心；主張環北路以西都市計畫擴大，關注嫌惡設施集中。','都市計畫與土地使用變更需法定審議程序，非議員單獨決定。','西區'],['問政服務','維持服務處、專業助理與每週法律諮詢；陳情案件追蹤回報。','屬議員服務及監督方式。','全市']]},
 {name:'李雅芬',type:'議員',num:'4',intro:'醫護工作與母親經驗切入，關注兒少安全、通學及在宅醫療。',items:[['兒少與教育','推動兒童工作證、擴大托育人員管理、校校心理師、兒少安全單一窗口；爭取西區公托與親子館。','兒童工作證涉及法規；心理師配置、托育與教育由縣府及相關主管機關執行。','西區'],['交通','西區學區實體人行道、防撞護欄、30公里限速區、行人早開時相、智慧號誌與YouBike站點。','道路主管機關及交通管理機關須配合；需路段清單及經費。','西區'],['醫療長照','整合診所、護理師、藥師推動在宅急診支援中心；社區肌力課程；緊急喘息24小時快速派案。','涉及衛生局、醫療院所、健保與長照服務量能；候選人提出跨專業整合構想。','西區'],['公共建設','爭取西區運動中心、親子圖書館，發展農漁濱海觀光；改善淹水與老舊電路。','需土地、財源與各主管機關分工。','西區'],['教師支持','教師行政減壓、親師溝通人才庫與離線權。','主要涉及教育主管機關及學校制度。','全市']]},
@@ -96,5 +115,5 @@ el('reset').onclick=()=>{['type','person','topic','area','power','q'].forEach(id
 el('copy').onclick=()=>{let u=new URL(location.href);['type','person','topic','area','power','q'].forEach(id=>el(id).value?u.searchParams.set(id,el(id).value):u.searchParams.delete(id));if(navigator.clipboard)navigator.clipboard.writeText(u.href).then(()=>{el('copy').textContent='已複製';setTimeout(()=>el('copy').textContent='複製查詢連結',1600)}).catch(()=>prompt('複製連結',u.href));else prompt('複製連結',u.href)};
 ['compareType','compareTopic'].forEach(id=>el(id).onchange=renderCompare);
 el('allCommon').innerHTML=['議員','市長'].map(t=>`<h4>${t==='議員'?'縣議員':'市長'}</h4>${THEMES[t].map(a=>`<div class="analysis"><h4>${esc(a[0])}</h4><p>${esc(a[1])}</p><p class="followup"><strong>建議追問：</strong>${esc(a[2])}</p></div>`).join('')}`).join('');
-const params=new URLSearchParams(location.search);['type','person','topic','area','power','q'].forEach(id=>{if(params.has(id))el(id).value=params.get(id)});render();renderCompare();switchView(['browse','compare','west','guide'].includes(location.hash.slice(1))?location.hash.slice(1):'browse');
+const params=new URLSearchParams(location.search);['type','person','topic','area','power','q'].forEach(id=>{if(params.has(id))el(id).value=params.get(id)});render();renderCompare();switchView(['browse','compare','west','guide','followups'].includes(location.hash.slice(1))?location.hash.slice(1):'browse');
 </script></body></html>
